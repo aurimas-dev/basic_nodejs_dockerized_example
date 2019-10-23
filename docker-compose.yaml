@@ -1,0 +1,9 @@
+version: '2' # The file format version
+
+services: # The services we want to create
+  web:
+    build: . # Run the build against the current directory Dockerfile
+    volumes: 
+      - .:/app # Folder mapping
+    ports:
+      - 9001:3000 # Port mapping
